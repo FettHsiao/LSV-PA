@@ -121,7 +121,7 @@ void cutfunction(Abc_Ntk_t* pNtk, int k, int l) {
                 if ((int)mergeCut.size() > k) {
                     continue;  
                 }
-                newCuts.push_back(move(mergeCut));
+                newCuts.push_back(std::move(mergeCut));
             }
         }
 
